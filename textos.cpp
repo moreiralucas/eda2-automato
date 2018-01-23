@@ -29,3 +29,7 @@ void Search_word::compute_table(std::string pattern, std::string alphabet) {
         }
     }
 }
+
+void Search_word::print_table() {
+    // TODO: Implement you code here
+}

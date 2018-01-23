@@ -11,5 +11,5 @@ class Search_word {
         void compute_table(std::string pattern, std::string alphabet);
         void print_datas();
         void search_pattern();
-
+        void Search_word::print_table()
 };
