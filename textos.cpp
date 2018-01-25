@@ -6,16 +6,12 @@ Search_word::Search_word(const int size, const std::string& text, const std::str
     this->text = text;
     this->pattern = pattern;
     this->size = size;
-    // for (char caracter = 97; caracter < 123; caracter++) {
-        // alphabet.push_back(caracter);
-    // }
-    // alphabet.push_back('.');
-    // alphabet.push_back(',');
-    // alphabet.push_back(' ');
-
-    alphabet.push_back('a');
-    alphabet.push_back('b');
-    alphabet.push_back('c');
+    for (char caracter = 97; caracter < 123; caracter++) {
+        alphabet.push_back(caracter);
+    }
+    alphabet.push_back('.');
+    alphabet.push_back(',');
+    alphabet.push_back(' ');
 }
 
 void Search_word::print_datas() { // remover esse método
