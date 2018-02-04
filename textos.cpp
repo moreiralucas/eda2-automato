@@ -1,5 +1,4 @@
 #include "textos.hpp"
-#include "main.hpp" // TODO: Remover esse cabeçalho
 #include <iostream> // TODO: Remover esse cabeçalho
 
 Search_word::Search_word(const int size, const std::string& text, const std::string& pattern){

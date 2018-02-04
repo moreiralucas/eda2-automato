@@ -2,7 +2,6 @@
  * @author Lucas Moreira
  * @date 18/01/2018
  */
-#include "main.hpp"
 #include "textos.hpp"
 
 using namespace std;
