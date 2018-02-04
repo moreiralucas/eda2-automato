@@ -1,7 +1,7 @@
 CC=g++
 LDFLAGS= -std=c++11
 #remover CFLAGS
-CFLAGS=-I.
+CFLAGS=-I. -Wall
 DEPS=main.hpp
 OBJ = main.o textos.o
 

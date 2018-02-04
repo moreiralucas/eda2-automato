@@ -26,12 +26,14 @@ int main() {
     char input;
     text.compute_table();
     while (cin >> input, input != 'e') {
+        print "input: " << input << std::endl;
         if (input == 's') {
             print "busca padrão" << '\n';
             text.search_pattern();
         }
         else { // input == 'u'
-            print "impressão da tabela" << '\n';
+            print "impressão da tabela" << std::endl;
+            text.compute_table();
         }
 
     }
