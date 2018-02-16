@@ -4,6 +4,7 @@
  */
 #include <vector>
 #include <string>
+#include <iostream>
 #define TAM_ALPHABET 29
 
 // -------------------------------------------
@@ -24,13 +25,15 @@ class Search_word {
         std::string pattern;
         std::vector<char> alphabet;
         std::vector<int> table[TAM_ALPHABET];
-        int delta(int, char);
-        void set_delta(int, int);
         bool is_suffix(const int, const int, const char);
+        char int_to_caracter(int);
+        int caracter_to_int(char);
+        int get_delta(int, int);
+        void set_delta(int, int);
+        std::string to_string(int, int, int);
     public:
         Search_word(const int, const std::string&, const std::string&);
         void compute_table();
-        void print_datas();
         void print_table();
         void search_pattern();
 };

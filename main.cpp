@@ -12,9 +12,9 @@ void teste() {
     int tam_texto = texto.size();
     Search_word text(tam_texto, texto, padrao_texto);
 
-    text.print_datas();
     text.compute_table();
     text.print_table();
+    text.search_pattern();
 }
 
 /**
