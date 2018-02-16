@@ -2,7 +2,7 @@ CC=g++
 LDFLAGS= -std=c++11
 #remover CFLAGS
 CFLAGS=-I. -Wall
-DEPS=main.hpp
+DEPS=textos.hpp
 OBJ = main.o textos.o
 
 %.o: %.cpp $(DEPS)

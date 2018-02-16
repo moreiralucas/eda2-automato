@@ -2,12 +2,14 @@
  * @author Lucas Moreira
  * @date 18/01/2018
  */
-#include <iostream> // TODO: Remover esse cabeçalho
 #include <vector>
 #include <string>
+#define TAM_ALPHABET 29
 
 // -------------------------------------------
 // Trecho utilizado somente para desenvolvimento
+#include <iostream> // TODO: Remover essa linha
+#include <map>
 #define debug true
 
 #ifndef print
@@ -21,7 +23,9 @@ class Search_word {
         std::string text;
         std::string pattern;
         std::vector<char> alphabet;
-        std::vector<std::vector<int> > table;
+        std::vector<int> table[TAM_ALPHABET];
+        int delta(int, char);
+        void set_delta(int, int);
         bool is_suffix(const int, const int, const char);
     public:
         Search_word(const int, const std::string&, const std::string&);

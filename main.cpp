@@ -3,16 +3,30 @@
  * @date 18/01/2018
  */
 #include "textos.hpp"
+#include <iostream>
 
 using namespace std;
+
+void teste() {
+    string texto = "abababacaba", padrao_texto = "ababaca";
+    int tam_texto = texto.size();
+    Search_word text(tam_texto, texto, padrao_texto);
+
+    text.print_datas();
+    text.compute_table();
+    text.print_table();
+}
 
 /**
 * [main aplicação principal]
 */
 int main() {
+    if (debug) {
+        teste();
+        return 0;
+    }
     int tam_texto;
     string texto, padrao_texto;
-
     // -------- Lendo os dados de entrada -----------
     cin >> tam_texto;
     cin.ignore();
@@ -20,7 +34,6 @@ int main() {
     getline(cin, padrao_texto);
     // ------------------------------------------------
     Search_word text(tam_texto, texto, padrao_texto);
-    if(debug) text.print_datas();
 
     char input;
     text.compute_table();
@@ -32,7 +45,7 @@ int main() {
         }
         else { // input == 'u'
             print "impressão da tabela" << std::endl;
-            text.compute_table();
+            text.print_table();
         }
 
     }
