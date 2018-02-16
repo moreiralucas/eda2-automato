@@ -2,8 +2,8 @@ CC=g++
 LDFLAGS= -std=c++11
 #remover CFLAGS
 CFLAGS=-I. -Wall
-DEPS=textos.hpp
-OBJ = main.o textos.o
+DEPS=textos.hpp testes.hpp
+OBJ = main.o textos.o testes.o
 
 %.o: %.cpp $(DEPS)
 	$(CC) $(LDFLAGS) -c -o $@ $<
