@@ -7,17 +7,6 @@
 #include <iostream>
 #define TAM_ALPHABET 29
 
-// // -------------------------------------------
-// // Trecho utilizado somente para desenvolvimento
-// #include <iostream> // TODO: Remover essa linha
-// #include <map>
-// #define debug true
-//
-// #ifndef print
-// #define print if(debug)std::cout <<
-// #endif
-// // -------------------------------------------
-
 class Search_word {
     private:
         int size;

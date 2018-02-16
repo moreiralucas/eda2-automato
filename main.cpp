@@ -3,7 +3,6 @@
  * @date 18/01/2018
  */
 #include "textos.hpp"
-#include <iostream>
 
 /**
 * [main aplicação principal]
@@ -28,7 +27,6 @@ int main() {
         else { // input == 'u'
             text.print_table();
         }
-
     }
     return 0;
 }
