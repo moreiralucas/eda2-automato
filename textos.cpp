@@ -144,7 +144,7 @@ void Search_word::search_pattern() {
         c_int = Search_word::caracter_to_int(text[i]);
         q = Search_word::get_delta(q, c_int);
         if (q == m)
-            std::cout << i - 2 << std::endl;
+            std::cout << i - m + 2 << std::endl;
     }
 }
 
